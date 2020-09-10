@@ -19,7 +19,7 @@ sex = str(input("entrez le sexe H/F"))
 age = int(input("ENTREZ VOTRE AGE"))
 c1 = sex = "H" and age > 20
 c2 = sex = "F" and (age > 18 and age < 35)
-if c1 or c2:
+if c1 and c2:
     print("imposable")
 else:
     print("non-imposable")    

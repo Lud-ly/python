@@ -1,11 +1,23 @@
 # exercice 3.5
-a = 25
-b = 35
-if a == 0 or b == 0:
+"""ALGO
+Variables a, b en Entier
+Début
+Ecrire "Entrez deux nombres : "
+Lire a, b
+Si (a = 0 OU b = 0)  (a > 0 ou b < 0) et (a < 0 ou b > 0) Alors
+  Ecrire "Le produit est nul"
+SinonSi (a > 0 ou b > 0) Alors
+  Ecrire "Le produit est positif"
+SinonSi (a < 0 ou b < 0)  
+  Ecrire "Le produit est négatif"
+Finsi
+Fin"""
+a = int(input("Entrez le premier nombre"))
+b = int(input("Entrez le second nombre"))
+if a == 0 or b == 0 and a > 0 or b < 0 and a < 0 or b > 0 :
     print("le produit est null")
-if a > 0 and b > 0:
+elif a > 0 and b > 0:
     print("le produit est positif")
-if a < 0 and b < 0:
+elif a < 0 and b < 0:
     print("le produit est negatif")
-else:
-    print("le produit ne peut pas etre evalué")
+

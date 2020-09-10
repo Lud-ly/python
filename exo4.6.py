@@ -17,6 +17,3 @@ Sinon
   Ecrire "Ballotage défavorable"
 FinSi
 Fin"""
-
-int(input("Entrez les scores des quatre prétendants :"))
-
