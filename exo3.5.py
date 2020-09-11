@@ -21,3 +21,18 @@ elif a > 0 and b > 0:
 elif a < 0 and b < 0:
     print("le produit est negatif")
 
+"""JAVA
+public class Main
+{
+    public static void main(String[] args) 
+    {
+       int nbr = 5;
+       if(nbr > 0)
+         System.out.println(nbr+" est un nombre positif");
+       else if(nbr < 0)
+         System.out.println(nbr+" est un nombre négatif");
+       else   
+         System.out.println(nbr+" n'est ni positif ni négatif");
+    }
+}
+ """

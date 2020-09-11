@@ -18,13 +18,13 @@ Pour i ← 0 à Nb - 1
 Ecrire "Nombre de valeurs positives : ", Nbposi
 Ecrire "Nombre de valeurs négatives : ", Nbnega
 Fin"""
-T = (0)
-Nb = input("Entrez le nombre de valeurs :")
-Redim T (Nb-1)
+Nb = (input(str("Entrez le nombre de valeurs :")))
 Nbposi = 0
 Nbnega = 0
-for i in range(1,Nb-1):
-    T = int(input("Entrez le nombre n° ", i + 1))
+i=1
+T=(0)
+T = (input( int ("Entrez le nombre n° ", i + 1)))
+for i in range(Nb-1):
     if T(i) > 0:
         Nbposi = Nbposi + 1
     else:
