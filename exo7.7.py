@@ -27,34 +27,15 @@ TANT QUE j <= m FAIRE
     j <- j+1
 FIN TANT QUE
 """
-T1 =[]
-T2 =[]
+T1 =[2,8,68,95]
+T2 =[10,57,36,15,2,7]
 T=[]
 m =0
 t=[]
 n=0
-i = 0
-j = 0
-k = 0
-while i <= n and j <= m:
-    if T1[i] < T2[j]:
-        t[k]= T1[i]
-        k =k + 1
-        i =i+1
-    else:
-        T[k] <- T2[j]
-        k <- k+1
-        j <- j+1
-      
-while i <= n :
-    T[k] <- T1[i]
-    k <- k+1
-    i <- i+1
-while j <= m :
-    T[k] <- T2[j]
-    k <- k+1
-    j <- j+1
-    
+i,j,k = 0
+while T1 <= n and T2 <= m:
+   
     """autre tentative
     val=0
 for i in (0,1):
