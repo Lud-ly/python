@@ -11,4 +11,4 @@ if m == 60:
     h == h + 1
 if h  == 24:
     h == 0
-    print("dans une minute il sera",h,"heure",m,"minute")    
+    print("dans une minute il sera",h,"heure",m+1,"minutes")    

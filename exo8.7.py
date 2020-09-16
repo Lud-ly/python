@@ -1,3 +1,4 @@
+
 """ALGO
 Variables i, j , posi, posj, i2, j2 en Entier
 Variables Correct, MoveOK en Booléen
