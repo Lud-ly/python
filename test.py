@@ -14,3 +14,5 @@ planets = ["Earth", "Mars", "Neptune", "Venus", "Mercury", "Saturn", "Jupiter", 
 	
 for i in planets:
     print(i)
+foo = { "marque" : "Nike", "type": "Chaussure", "size": 42 }
+print(foo.get("type"))    

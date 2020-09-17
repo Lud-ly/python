@@ -6,7 +6,7 @@ Lire N
 Ecrire "Entrez le nombre de chevaux joués : "
 Lire P
 Crée facto
-    si n ←0
+    si n =0
     return 1
     sinon 
     FF =fact(n-1)

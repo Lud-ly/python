@@ -1,13 +1,11 @@
 """ALGO
-Variable Bla en Caractère
-Variables Nb, i, j en Entier
 Début
 Ecrire "Entrez une phrase : "
 Lire Bla
 Ecrire "Entrez le rang du caractère à supprimer : "
 Lire Nb
-L ← Len(Bla)
-Bla ←  bla[:nb] + bla[nb+1:]
+l = Len(Bla)
+Bla =  bla[:nb] + bla[nb+1:]
 
 Ecrire "La nouvelle phrase est : ", Bla
 Fin"""
