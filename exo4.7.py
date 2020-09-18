@@ -62,26 +62,26 @@ c2 = perm >= 2
 c3 = assur > 5
 if c1 ==False and c2 == False:
     if acc == 0:
-       print("rouge")
+       situ("rouge")
     else:
-        print("refusé")
-elif (c1 ==False and c2==True)or(c1==True and c2==True):
+        situ=("refusé")
+elif (c1 ==False and c2==True)or(c1==True and c2==False):
     if acc == 0:
-         print("orange")
+         situ=("orange")
     elif acc == 1:
-         print("rouge")
+         situ=("rouge")
     else:
-         print("refusé")
+         situ=("refusé")
 else:         
     if acc == 0:
-         print("vert")
+         situ=("vert")
     elif acc == 1: 
-         print("orange")
+         situ=("orange")
     elif acc == 2:
-         print("rouge")
+         situ=("rouge")
     else:
-         print("refusé")
-
+         situ=("refusé")
+ 
 if c3 ==True:
    if situ == "rouge":
        situ = "orange"
@@ -89,6 +89,8 @@ if c3 ==True:
        situ = "vert"
    elif situ == "vert":
        situ = "bleu"
-print("votre situation",situ==c3)  
+
+print("votre situation",situ) 
+
 
 

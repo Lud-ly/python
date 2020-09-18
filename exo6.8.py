@@ -23,7 +23,7 @@ Nbposi = 0
 Nbnega = 0
 i=1
 T=(0)
-T = (input( int ("Entrez le nombre n° ", i + 1)))
+T = (input(int("Entrez le nombre n° ", i + 1)))
 for i in range(Nb-1):
     if T(i) > 0:
         Nbposi = Nbposi + 1
