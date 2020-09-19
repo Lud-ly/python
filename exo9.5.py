@@ -17,5 +17,5 @@ bla = bla[:nb] + bla[nb+1:]
 
 print("la nouvelle phrase est :",bla)
 bla2 = input("Entrez la phrase : ")
-bla2 = bla2.replace(bla,bla[nb])
+bla2 = bla2.replace(bla,bla2)
 print(bla2+bla)

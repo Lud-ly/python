@@ -3,6 +3,9 @@ crée list1 =[15,25,35,4]
 crée list2 = [55, 65, 75, 8]
 ecrire  list1 list2
 trier les list
+list 3=itertools.chain de list1 et2
+trier list 3
+ecrire list3
 
 """
 
