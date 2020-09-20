@@ -1,15 +1,42 @@
+
+x=0
+y=0
+o="|o|"
+posiX=0
+posiY=0
+x2=0
+y2=0
+correct=True
+moveOk=True
+
+dedim= []
+for x in range(0,10):
+    dedim.append([])
+    for y in range(0,10):
+          dedim[x].append(o)
+for row in dedim:    
+  print(''.join([str(elem) for elem in row]))
+ 
+
+#autrex 
 n = 7
 a = [[0] * n for i in range(n)]
 for i in range(n):
     for j in range(n):
         if i < j:
-            a[i][j] = "x"
+            a[i][j] = " o "
         elif i > j:
-            a[i][j] = "o"
+            a[i][j] = " o "
         else:
-            a[i][j] = "x"
+            a[i][j] = " o "
+           
 for row in a:
-    print(' '.join([str(elem) for elem in row]))
+    print(''.join([str(elem) for elem in row]))
+
+
+
+
+    
 """ALGO
 Variables i, j , posi, posj, i2, j2 en Entier
 Variables Correct, MoveOK en Booléen
