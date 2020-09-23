@@ -7,10 +7,10 @@ Lire Nb
 Redim T(Nb-1)
 Nbposi ← 0
 Nbnega ← 0
-Pour i ← 0 à Nb - 1
+si t ← 0 et Nb - 1
   Ecrire "Entrez le nombre n° ", i + 1
-  Lire T(i)
-  Si T(i) > 0 alors
+  Lire t(i)
+  Si t(i) > 0 alors
     Nbposi ← Nbposi + 1
   Sinon
     Nbnega ← Nbnega + 1
@@ -23,7 +23,7 @@ Nbposi = 0
 Nbnega = 0
 i=1
 T=(0)
-T = (input(int("Entrez le nombre n° ", i + 1)))
+T = (input( int ("Entrez le nombre n° ", i + 1)))
 for i in range(Nb-1):
     if T(i) > 0:
         Nbposi = Nbposi + 1

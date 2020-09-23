@@ -17,7 +17,6 @@ online_players = ["1", "2", "3", "5","18"]
 print("tableau initial",online_players)
 online_players.pop(input("suprimmez un element"))
 print("element suprimé",online_players)
-"""
 online_players[0] = "99"
 print(" ajouter element",online_players)
 online_players.append("150")
@@ -28,4 +27,4 @@ online_players.pop(3)
 online_players.remove(input("suprimmez un element"))
 print("element suprimé",online_players)
 online_players.clear()
-print("clear = tableau vidé", online_players)"""
+print("clear = tableau vidé", online_players)

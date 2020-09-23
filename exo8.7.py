@@ -1,42 +1,83 @@
+twoDim=[[10],[10]]
+i=0
+j=0
+pion_x=0
+pion_y=0
+new_x=0
+new_y=0
 
-x=0
-y=0
-o="|o|"
-posiX=0
-posiY=0
-x2=0
-y2=0
-correct=True
-moveOk=True
-
-dedim= []
-for x in range(0,10):
-    dedim.append([])
-    for y in range(0,10):
-          dedim[x].append(o)
-for row in dedim:    
-  print(''.join([str(elem) for elem in row]))
- 
-
-#autrex 
-n = 7
-a = [[0] * n for i in range(n)]
-for i in range(n):
-    for j in range(n):
-        if i < j:
-            a[i][j] = " o "
-        elif i > j:
-            a[i][j] = " o "
-        else:
-            a[i][j] = " o "
-           
-for row in a:
-    print(''.join([str(elem) for elem in row]))
+for x in range (10):
+  for y in range (10):
+    twoDim=[x][y]
 
 
+def testMove(move,pion_x,pion_y):
+  correct = True
+  if(move== 0):
+    new_x=pion_x -1
+    new_y=pion_y-1
 
+  elif(move== 1):
+    new_x=pion_x -1
+    new_y=pion_y+1
 
-    
+  elif(move== 2):
+    new_x=pion_x +1
+    new_y=pion_y-1
+
+  else:
+    new_x=pion_x +1
+    new_y=pion_y+1  
+
+  if (new_x <0 or new_x>9):
+    correct = False
+  elif (new_y <0 or new_y>9):
+    correct = False
+
+  if(correct):
+    twoDim[pion_x][pion_y] =0
+    twoDim[new_x][new_y]=1
+    """displayBoard()""" 
+  else:
+    print("mouvement impossible")  
+
+def checkLine(input):
+  correct= False
+  resultat =0
+  while(correct==True):
+    resultat=(input("Sur quelle ligne se trouve votre pion?"))
+    if (resultat)>0 and resultat<=10:
+      correct=True
+    return resultat
+
+def checkCol(input):
+  correct= False
+  resultat =0
+  while(correct==True):
+    resultat=(input("Sur quelle colonne se trouve votre pion?"))
+    if (resultat)>0 and resultat<=10:
+      correct=True
+    return resultat
+
+def checkMove(input):
+  correct= False
+  resultat =0
+  while(correct==True):
+    resultat=(input("quel mouvement voulez-vous faire? 0.1,2 ou 3 : "))
+    if (resultat)>=0 and resultat<=3:
+      correct=True
+    return resultat
+
+def displayBoard():
+  print("[")
+  for x in range (10):
+    print("[")
+    for y in range (10):
+      print(twoDim[x][y])
+      if(y!=9):
+        print(",")
+    print("] /n") 
+  print("] /n")         
 """ALGO
 Variables i, j , posi, posj, i2, j2 en Entier
 Variables Correct, MoveOK en Booléen
