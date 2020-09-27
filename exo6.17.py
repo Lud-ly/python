@@ -1,6 +1,36 @@
 import random
 
-def tri_insertion(liste):
+
+tableau=[]
+tab_lenght = 5
+tableau = [tab_lenght]
+valeur = 0
+j = 0
+i=0
+
+for i in range(tab_lenght):
+    valeur=(int(input("veuillez saisir des valeurs:"))) 
+    
+
+#for j in tableau:
+    #print(tableau[j]+",")    
+
+
+def tri_insertion(tableau):
+    for i in  range(len(tableau)):
+        valeur = tableau[i]
+        j = i
+        while(j>0 and tableau[j-1]>valeur):
+            tableau[j] =tableau[j-1]
+            j=j-1
+        tableau[j] = valeur
+
+
+tri_insertion(tableau)
+for valeur in tableau:
+    print("la",tableau[j])
+
+"""def tri_insertion(liste):
     L = list(liste) 
     N = len(L)
     for n in range(1,N):
@@ -19,7 +49,7 @@ for k in range(10):
 
                       
 print("list non trié",liste)
-print("liste croissante",liste_triee)
+print("liste croissante",liste_triee)"""
 
 """ALGO
         taille en numerique de la longeur du tableau

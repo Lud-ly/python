@@ -9,23 +9,12 @@ Bla =  bla[:nb] + bla[nb+1:]
 
 Ecrire "La nouvelle phrase est : ", Bla
 Fin"""
-bla = input("Entrez la phrase : ")
-nb = int(input("Entrez le rang du caractère à supprimer : "))
-#l = len(bla)
+phrase = input("Entrez la phrase : ")
+delete = int(input("Entrez le rang du caractère à supprimer : "))
 
-bla = bla[:nb] + bla[nb+1:]
+phrase = phrase[:delete] + phrase[delete+1:]
 
-print("la nouvelle phrase est :",bla)
-bla2 = input("Entrez la phrase : ")
-bla2 = bla2.replace(bla,bla2[nb-1])
-print(bla2+bla)
-# Python3 program to demonstrate the  
-# use of replace() method   
-  
-string = "geeks for geeks" 
-   
-# Prints the string by replacing geeks by Geeks  
-print(string.replace("geeks", "Geeks"))  
-  
-# Prints the string by replacing only 3 occurrence of Geeks   
-print(string.replace("geeks", "GeeksforGeeks", 3))
+print("la nouvelle phrase est :",phrase)
+newPhrase = input("Entrez la phrase : ")
+newPhrase = newPhrase.replace(phrase,newPhrase[delete-1])
+print(newPhrase+phrase)

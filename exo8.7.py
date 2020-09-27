@@ -8,7 +8,7 @@ new_y=0
 
 for x in range (10):
   for y in range (10):
-    twoDim=[x][y]
+    twoDim[x][y]=0
 
 
 def testMove(move,pion_x,pion_y):
