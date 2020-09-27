@@ -3,7 +3,7 @@ from random import uniform
 import random
 
 
-for i in range(6):
+for i in range(1):
   print("( 0 =< Glup =< 2) =>",uniform(0,2))
 
 for i in range(1):

@@ -1,4 +1,3 @@
-
 price = 100
 montant_verse = 0
 bil10E = 0
