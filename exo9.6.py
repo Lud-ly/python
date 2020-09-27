@@ -33,7 +33,7 @@ def decrypter_phrase(phrase, decalage):
 
 # ETAPE 5
 def cryptage(element):
-    decalage = randrange(1, 301)
+    decalage = randrange(1, 10)
     phrase = crypter_phrase(element, decalage)
     return chr(decalage) + phrase
 
@@ -64,35 +64,3 @@ reponse = "rien"  # pour rentrer dans le while
 while (reponse.lower() != 'non'):
     main()
     reponse = str(input('\nVoulez-vous recommencer? '))   
-"""Variables Bla, Cod, Alpha en Caractère
-Variables i, Pos en Entier
-Début
-Ecrire "Entrez la phrase à coder : "
-Lire Bla
-Alpha ← "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-Cod ← ""
-Pour i ← 1 à Len(Bla)
-  Let ← Mid(Bla, i, 1) 
-  Si Let <> "Z" Alors
-    Pos ← Trouve(Alpha, Let)
-    Cod ← Cod & Mid(Alpha, Pos + 1, 1) 
-  Sinon
-    Cod ← Cod & "A" 
-  FinSi
-i Suivant
-Bla ← Cod
-Ecrire "La phrase codée est : ", Bla
-Fin
-
-pos = 0
-Alphabet  = "ABCDEFGHIJKLMNOPKRSTUVWXYZ"
-phrase = input("Entrez la phrase à coder :")
-cod = ""
-for i in range(len(phrase)):
-  Let = (phrase,i,1)
-  if Let == "Z":
-    pos = (Alphabet,Let)
-    cod = (Alphabet+pos+1,1)
-  else:
-    cod = cod("A")  
-print("la phrase codée est : ",phrase)"""    

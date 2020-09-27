@@ -1,32 +1,17 @@
-"""ALGO
-Variables Nb, Posmaxi en Numérique
-Tableau T() en Numérique
-Ecrire "Entrez le nombre de valeurs :"
-Lire Nb
-Redim T(Nb-1)
-Pour i ← 0 à Nb - 1
-  Ecrire "Entrez le nombre n° ", i + 1
-  Lire T(i)
-i Suivant
-Posmaxi ← 0
-Pour i ← 0 à Nb - 1
-  Si T(i) > T(Posmaxi) alors
-    Posmaxi ← i
-  Finsi
-i Suivant
-Ecrire "Element le plus grand : ", T(Posmaxi)
-Ecrire "Position de cet élément : ", Posmaxi
-Fin"""
-T = [0]
+nb = 0
+Nbmax = 0
+y =0 
+pos = 0
 i=0
-Nb = 0
-Nb = int(input("Entrez un nombre determiné de valeurs :")) 
-i = int(input("Entrez le nombre n° "))
-for i in range(Nb - 1):
-  i = T
-Pomaxi = 0
-for i in Nb - 1:
-  if T > Pomaxi:
-    Pomaxi = 1
-print("Element le plus grand : ",T)
-print ("Position de cet élément : ",Pomaxi)
+print("entrer 5 nombres ->")
+for i in range(5):
+  nb = int(input("Entrez les nombres  :"))
+  if (nb >Nbmax):
+    Nbmax = nb
+    pos = y
+    y = y+1
+    
+
+print("le nombre le plus grand est : ",Nbmax)
+print("la position du nombre est : ",pos)
+

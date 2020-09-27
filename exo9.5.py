@@ -1,14 +1,3 @@
-"""ALGO
-Début
-Ecrire "Entrez une phrase : "
-Lire Bla
-Ecrire "Entrez le rang du caractère à supprimer : "
-Lire Nb
-l = Len(Bla)
-Bla =  bla[:nb] + bla[nb+1:]
-
-Ecrire "La nouvelle phrase est : ", Bla
-Fin"""
 phrase = input("Entrez la phrase : ")
 delete = int(input("Entrez le rang du caractère à supprimer : "))
 

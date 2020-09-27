@@ -1,32 +1,4 @@
-"""ALGO
-Variables montant_verse, price, payer, Reste, bil10E, bil5E En Entier
-Debut
-price ← 100
-montant_verse ← 0
-TantQue montant_verse = 0
-  Ecrire "Ecrire le montant:"
-  Lire montant
-  price = price - montant_verse
-Fin TantQue
-Ecrire ""vous nous devez :",price,"€""
-Ecrire "payer somme due :"
-Lire payer
-reste ← payer - price
-bil10E ← 0
-TantQue Reste >= 10
-  bil10E ← bil10E + 1
-  Reste ← Reste – 10
-Fin TantQue
-bil5E ← 0
-Si Reste >= 5
-  bil5E ← 1
-  Reste ← Reste – 5
-FinSi
-Ecrire "Retour de la monnaie :"
-Ecrire bil10E,"Billets de 10 E" 
-Ecrire  bil5E,"Billets de  5"
-Ecrire  reste, "Pièces de 1"
-Fin"""
+
 price = 100
 montant_verse = 0
 bil10E = 0

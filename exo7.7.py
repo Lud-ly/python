@@ -1,16 +1,11 @@
-"""ALGO
-crée list1 =[15,25,35,4]
-crée list2 = [55, 65, 75, 8]
-ecrire  list1 list2
-trier les list
-list 3=itertools.chain de list1 et2
-trier list 3
-ecrire list3
+list1=[]
+list2=[]
+for i in range(5):
+   valList1 = input("entrer des valeurs dans le tableau1 : ")
+   valList2 = input("entrer des valeurs dans le tableau2 : ")
+   list1+=valList1
+   list2+=valList2
 
-"""
-
-list1 = [15, 25, 35, 4]
-list2 = [55, 65, 75, 8]
 print(list1,list2)
 list1.sort()
 list2.sort()
